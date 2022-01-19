@@ -15,14 +15,51 @@ public class Basics {
         //  sum of given digits
         int num = 10234;
         int sum = 0;
-        while(num !=0){
-            int digit = num %  10;
-            sum = sum +digit;
-            num = num/10;
+        while (num != 0) {
+            int digit = num % 10;
+            sum = sum + digit;
+            num = num / 10;
         }
 
 
         System.out.println("The sum will be : " + sum);
 
+        // prime number
+        int number = 73;
+        boolean flag = true;
+
+        for (int i = 2; i < number / 2; i++) {
+            if (number % i == 0) {
+                flag = false;
+            }
+        }
+        if (flag) {
+            System.out.println("prime");
+        } else {
+            System.out.println("not-prime");
+        }
+
+//        armstrong number
+        System.out.println(armstrongno(22));
     }
+
+    public static boolean armstrongno(int num){
+//        153 = 1*1*1 + 5*5*5 + 3*3*3
+        int num1=num;
+         int sum = 0;
+         while(num!=0){
+             int rem = num%10;
+             sum = sum + (rem*rem*rem);
+             num = num/10;
+         }
+         if(num1==sum){
+             return true;
+         }
+         else{
+             return false;
+         }
+
+    }
+
+
 }

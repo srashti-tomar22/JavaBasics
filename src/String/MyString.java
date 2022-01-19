@@ -4,7 +4,7 @@ public class MyString {
 
     public static void main(String[] args) {
 
-        System.out.println(isPalindromeNaive( str: "ABcccccdBA"));
+        System.out.println(isPalindromeNaive("ABcccccdBA"));
 
     }
 
@@ -13,8 +13,9 @@ public class MyString {
     public static boolean isPalindromeNaive(String str) {
         String str1 = "";
 
-        for (i = str.length - 1; i >= 0; i--) {
-            str1 = str.charAt(i);
+        for ( int i = str.length() - 1; i >= 0; i--) {
+            str1 = str1+str.charAt(i);
+
         }
         if (str.compareTo(str1) == 0) {
             return true;
@@ -23,10 +24,12 @@ public class MyString {
 
     }
 
+
+
     //second method---->
     //   Time complexity-O(n) or O(n/2)
     //    Space Complexity-O(1)
-    public static boolean isPalindromeNaive(String str) {
+    public static boolean isPalindrome(String str) {
         int i = 0;
         int j = str.length() - 1;
 
@@ -36,7 +39,7 @@ public class MyString {
             }
             i++;
             j--;
-        }return True;
+        }return true;
 
     }
 
