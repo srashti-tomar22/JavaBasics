@@ -41,25 +41,26 @@ public class Basics {
 
 //        armstrong number
         System.out.println(armstrongno(22));
+
     }
 
-    public static boolean armstrongno(int num){
+    public static boolean armstrongno(int num) {
 //        153 = 1*1*1 + 5*5*5 + 3*3*3
-        int num1=num;
-         int sum = 0;
-         while(num!=0){
-             int rem = num%10;
-             sum = sum + (rem*rem*rem);
-             num = num/10;
-         }
-         if(num1==sum){
-             return true;
-         }
-         else{
-             return false;
-         }
-
+        int num1 = num;
+        int sum = 0;
+        while (num != 0) {
+            int rem = num % 10;
+            sum = sum + (rem * rem * rem);
+            num = num / 10;
+        }
+        if (num1 == sum) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
+
 
 
 }
