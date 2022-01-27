@@ -20,4 +20,18 @@ public class Factorial {
         System.out.println(fact);
 
     }
+//    Write a  program to find HCF (GCD) of two numbers.
+     int a = 20;
+    int b = 28;
+//    20->2*2*5
+//    28-> 2*2*7
+
+
+
+
+
+
+
 }
+
+
